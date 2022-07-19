@@ -53,7 +53,7 @@
 
                         <li class="nav-item">
 
-                            <a href="/" class="nav-link">Cadastre-se</a>
+                            <a href="/events/create" class="nav-link">Cadastre-se</a>
 
                         </li>
 
