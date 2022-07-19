@@ -1,22 +1,16 @@
-<!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+@extends('layouts.main')
 
-        <title>Laravel</title>
+@section('title', 'Cestas Sofisticadas')
+    
 
-        <link rel="stylesheet" href="/css/styles.css">
-        <script src="/js/scripts.js"></script>
-
-    </head>
-    <body class="antialiased">
-
+    @section('content')
+        
+  
         <h1>Bem vindo</h1>
 
         <img src ="/img/529-240420za.jpg" alt="Banner"
 
-        @if(10>5)s
+        @if(10>5)
             <p>A condição é true</p>
         @endif
 
@@ -58,5 +52,6 @@
 
         {{-- Assim que se usa comentário no blade --}}
 
-    </body>
-</html>
+     
+
+@endsection
