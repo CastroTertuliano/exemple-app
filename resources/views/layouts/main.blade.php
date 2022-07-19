@@ -14,6 +14,8 @@
 
         <!--CSS Bootstrap-->
 
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
         <!--CSS da aplicação-->
 
         <link rel="stylesheet" href="/css/styles.css">
@@ -21,7 +23,53 @@
 
     </head>
 
-    <body class="antialiased">
+    <body>
+
+        <header>
+
+           <nav class="navbar navbar-expand-lg navnar-light">
+
+                <div class="collapse navbar-collapse" id="navbar">
+
+                    <a href="/" class="navbar-brand">
+
+                        <img src="/img/logo_cestas.png" alt="CESTAS SOFISTICADAS">
+                    
+                    </a>
+
+                    <ul class="navbar-nav">
+
+                        <li class="nav-item">
+
+                            <a href="/" class="nav-link">Empresa</a>
+
+                        </li>
+
+                        <li class="nav-item">
+
+                            <a href="/" class="nav-link">Contato</a>
+
+                        </li>
+
+                        <li class="nav-item">
+
+                            <a href="/" class="nav-link">Cadastre-se</a>
+
+                        </li>
+
+                        <li class="nav-item">
+
+                            <a href="/" class="nav-link">Login</a>
+
+                        </li>
+
+                    </ul>
+
+                </div>
+
+           </nav>
+
+        </header>
 
         @yield('content')
 
