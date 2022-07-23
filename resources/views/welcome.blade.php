@@ -3,55 +3,52 @@
 @section('title', 'Cestas Sofisticadas')
     
 
-    @section('content')
+@section('content')
         
-  
-        <h1>Bem vindo</h1>
+  <div id="search-container" class="col-md-12">
 
-        <img src ="/img/529-240420za.jpg" alt="Banner"
+    <h1>Buscar Evento</h1>
 
-        @if(10>5)
-            <p>A condição é true</p>
-        @endif
+    <form action="">
 
-        <p>{{ $nome }}</p>
+        <input type="text" id="search" name="search" class="form-control" placeholder="Procurar...">
 
-        @if( $nome == "Pedro")
-        <p>O nome é Pedro</p>
-        @elseif($nome == "Matheus")
-        <p>O nome é {{$nome}} ele tem {{$idade}} anos, e trabalha como {{$profissão}}</p>
-        @else
-        <p>O nome não é pedro</p>
-        @endif
+    </form>
 
-        @for($i = 0; $i < count($arr); $i++)
+  </div>
 
-            <p>{{$i}} - {{ $arr[$i] }}</p>
+  <div id="events-container" class="col-md-12">
 
-                @if($i == 2)
-                <p>O i é 2</p>
-                @endif
+    <h2>Próximos Eventos</h2>
+    
+    <p class="subtitle">Veja os eventos dos próximos dias</p>
 
-        @endfor
+    <div id="cards-container" class="row">
 
-        @foreach($nomes as $nome)
+        @foreach ($events as $event)
 
-            <p>{{ $loop->index }}</p>
+           <div class="card col-md-3">
 
-            <p>{{ $nome }}</p>
+                <img src="/img/seats-2954367_1920.jpg" alt="{{ $event->title }}">
 
+                <div class="card-body">
+
+                    <p class="card-date">10/09/2022</p>
+
+                    <h5 class="card-title">{{ $event->title }}</h5>
+
+                    <p class="card-participants"> X Participantes </p>
+
+                    <a href="#" class="btn btn-primary">Saiba mais</a>
+
+                </div>
+
+           </div>
+                        
         @endforeach
 
-        @php
-            
-            $name = "joão";
-
-            echo $name;
-
-        @endphp
-
-        {{-- Assim que se usa comentário no blade --}}
-
-     
-
+    </div>
+    
+  </div>
+    
 @endsection

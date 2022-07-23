@@ -33,7 +33,7 @@
 
                     <a href="/" class="navbar-brand">
 
-                        <img src="/img/logo_cestas.png" alt="CESTAS SOFISTICADAS">
+                        <img src="/img/events.jpg" alt="OS MELHORES EVENTOS" height="50" width="50">
                     
                     </a>
 
@@ -41,13 +41,13 @@
 
                         <li class="nav-item">
 
-                            <a href="/" class="nav-link">Empresa</a>
+                            <a href="/" class="nav-link">Eventos</a>
 
                         </li>
 
                         <li class="nav-item">
 
-                            <a href="/" class="nav-link">Contato</a>
+                            <a href="/" class="nav-link">Criar Evento</a>
 
                         </li>
 
@@ -75,7 +75,7 @@
 
         <footer>
 
-            <p>&copy 2022 CESTAS SOFISTICADAS ALIMENTOS E PRESENTES LTDA - ME | Cestas de Café da Manhã - Todos os direitos reservados.</p>
+            <p>Events LTDA &copy 2022 - Todos os direitos reservados.</p>
         
         </footer>
 
